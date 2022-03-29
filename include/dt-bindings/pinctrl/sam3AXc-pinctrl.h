@@ -6,144 +6,144 @@
 
 #include <dt-bindings/pinctrl/atmel_sam_pinctrl.h>
 
-/* pa0_gpio */
-#define PA0_GPIO \
+/* pa00_gpio */
+#define PA00_GPIO \
 	SAM_PINMUX(a, 0, gpio, gpio)
 
-/* pa0a_can0_tx */
-#define PA0A_CAN0_TX \
+/* pa00a_can0_tx */
+#define PA00A_CAN0_TX \
 	SAM_PINMUX(a, 0, a, periph)
 
-/* pa0b_pwm_pwml3 */
-#define PA0B_PWM_PWML3 \
+/* pa00b_pwm_pwml3 */
+#define PA00B_PWM_PWML3 \
 	SAM_PINMUX(a, 0, b, periph)
 
-/* pa1_gpio */
-#define PA1_GPIO \
+/* pa01_gpio */
+#define PA01_GPIO \
 	SAM_PINMUX(a, 1, gpio, gpio)
 
-/* pa1a_can0_rx */
-#define PA1A_CAN0_RX \
+/* pa01a_can0_rx */
+#define PA01A_CAN0_RX \
 	SAM_PINMUX(a, 1, a, periph)
 
-/* pa1b_pmc_pck0 */
-#define PA1B_PMC_PCK0 \
+/* pa01b_pmc_pck0 */
+#define PA01B_PMC_PCK0 \
 	SAM_PINMUX(a, 1, b, periph)
 
-/* pa1x_supc_wkup0 */
-#define PA1X_SUPC_WKUP0 \
+/* pa01x_supc_wkup0 */
+#define PA01X_SUPC_WKUP0 \
 	SAM_PINMUX(a, 1, x, extra)
 
-/* pa2_gpio */
-#define PA2_GPIO \
+/* pa02_gpio */
+#define PA02_GPIO \
 	SAM_PINMUX(a, 2, gpio, gpio)
 
-/* pa2a_tc0_tioa1 */
-#define PA2A_TC0_TIOA1 \
+/* pa02a_tc0_tioa1 */
+#define PA02A_TC0_TIOA1 \
 	SAM_PINMUX(a, 2, a, periph)
 
-/* pa2x_adc_ad0 */
-#define PA2X_ADC_AD0 \
+/* pa02x_adc_ad0 */
+#define PA02X_ADC_AD0 \
 	SAM_PINMUX(a, 2, x, extra)
 
-/* pa3_gpio */
-#define PA3_GPIO \
+/* pa03_gpio */
+#define PA03_GPIO \
 	SAM_PINMUX(a, 3, gpio, gpio)
 
-/* pa3a_tc0_tiob1 */
-#define PA3A_TC0_TIOB1 \
+/* pa03a_tc0_tiob1 */
+#define PA03A_TC0_TIOB1 \
 	SAM_PINMUX(a, 3, a, periph)
 
-/* pa3b_pwm_pwmfi1 */
-#define PA3B_PWM_PWMFI1 \
+/* pa03b_pwm_pwmfi1 */
+#define PA03B_PWM_PWMFI1 \
 	SAM_PINMUX(a, 3, b, periph)
 
-/* pa3x_adc_ad1 */
-#define PA3X_ADC_AD1 \
+/* pa03x_adc_ad1 */
+#define PA03X_ADC_AD1 \
 	SAM_PINMUX(a, 3, x, extra)
 
-/* pa3x_supc_wkup1 */
-#define PA3X_SUPC_WKUP1 \
+/* pa03x_supc_wkup1 */
+#define PA03X_SUPC_WKUP1 \
 	SAM_PINMUX(a, 3, x, extra)
 
-/* pa4_gpio */
-#define PA4_GPIO \
+/* pa04_gpio */
+#define PA04_GPIO \
 	SAM_PINMUX(a, 4, gpio, gpio)
 
-/* pa4a_tc0_tclk1 */
-#define PA4A_TC0_TCLK1 \
+/* pa04a_tc0_tclk1 */
+#define PA04A_TC0_TCLK1 \
 	SAM_PINMUX(a, 4, a, periph)
 
-/* pa4x_adc_ad2 */
-#define PA4X_ADC_AD2 \
+/* pa04x_adc_ad2 */
+#define PA04X_ADC_AD2 \
 	SAM_PINMUX(a, 4, x, extra)
 
-/* pa5_gpio */
-#define PA5_GPIO \
+/* pa05_gpio */
+#define PA05_GPIO \
 	SAM_PINMUX(a, 5, gpio, gpio)
 
-/* pa5a_tc0_tioa2 */
-#define PA5A_TC0_TIOA2 \
+/* pa05a_tc0_tioa2 */
+#define PA05A_TC0_TIOA2 \
 	SAM_PINMUX(a, 5, a, periph)
 
-/* pa5b_pwm_pwmfi0 */
-#define PA5B_PWM_PWMFI0 \
+/* pa05b_pwm_pwmfi0 */
+#define PA05B_PWM_PWMFI0 \
 	SAM_PINMUX(a, 5, b, periph)
 
-/* pa5x_supc_wkup2 */
-#define PA5X_SUPC_WKUP2 \
+/* pa05x_supc_wkup2 */
+#define PA05X_SUPC_WKUP2 \
 	SAM_PINMUX(a, 5, x, extra)
 
-/* pa6_gpio */
-#define PA6_GPIO \
+/* pa06_gpio */
+#define PA06_GPIO \
 	SAM_PINMUX(a, 6, gpio, gpio)
 
-/* pa6a_tc0_tiob2 */
-#define PA6A_TC0_TIOB2 \
+/* pa06a_tc0_tiob2 */
+#define PA06A_TC0_TIOB2 \
 	SAM_PINMUX(a, 6, a, periph)
 
-/* pa6x_adc_ad3 */
-#define PA6X_ADC_AD3 \
+/* pa06x_adc_ad3 */
+#define PA06X_ADC_AD3 \
 	SAM_PINMUX(a, 6, x, extra)
 
-/* pa7_gpio */
-#define PA7_GPIO \
+/* pa07_gpio */
+#define PA07_GPIO \
 	SAM_PINMUX(a, 7, gpio, gpio)
 
-/* pa7a_tc0_tclk2 */
-#define PA7A_TC0_TCLK2 \
+/* pa07a_tc0_tclk2 */
+#define PA07A_TC0_TCLK2 \
 	SAM_PINMUX(a, 7, a, periph)
 
-/* pa7x_supc_wkup3 */
-#define PA7X_SUPC_WKUP3 \
+/* pa07x_supc_wkup3 */
+#define PA07X_SUPC_WKUP3 \
 	SAM_PINMUX(a, 7, x, extra)
 
-/* pa8_gpio */
-#define PA8_GPIO \
+/* pa08_gpio */
+#define PA08_GPIO \
 	SAM_PINMUX(a, 8, gpio, gpio)
 
-/* pa8a_uart_rxd */
-#define PA8A_UART_RXD \
+/* pa08a_uart_rxd */
+#define PA08A_UART_RXD \
 	SAM_PINMUX(a, 8, a, periph)
 
-/* pa8b_pwm_pwmh0 */
-#define PA8B_PWM_PWMH0 \
+/* pa08b_pwm_pwmh0 */
+#define PA08B_PWM_PWMH0 \
 	SAM_PINMUX(a, 8, b, periph)
 
-/* pa8x_supc_wkup4 */
-#define PA8X_SUPC_WKUP4 \
+/* pa08x_supc_wkup4 */
+#define PA08X_SUPC_WKUP4 \
 	SAM_PINMUX(a, 8, x, extra)
 
-/* pa9_gpio */
-#define PA9_GPIO \
+/* pa09_gpio */
+#define PA09_GPIO \
 	SAM_PINMUX(a, 9, gpio, gpio)
 
-/* pa9a_uart_txd */
-#define PA9A_UART_TXD \
+/* pa09a_uart_txd */
+#define PA09A_UART_TXD \
 	SAM_PINMUX(a, 9, a, periph)
 
-/* pa9b_pwm_pwmh3 */
-#define PA9B_PWM_PWMH3 \
+/* pa09b_pwm_pwmh3 */
+#define PA09B_PWM_PWMH3 \
 	SAM_PINMUX(a, 9, b, periph)
 
 /* pa10_gpio */
@@ -410,84 +410,84 @@
 #define PA29A_SPI0_NPCS1 \
 	SAM_PINMUX(a, 29, a, periph)
 
-/* pb0_gpio */
-#define PB0_GPIO \
+/* pb00_gpio */
+#define PB00_GPIO \
 	SAM_PINMUX(b, 0, gpio, gpio)
 
-/* pb0b_tc1_tioa3 */
-#define PB0B_TC1_TIOA3 \
+/* pb00b_tc1_tioa3 */
+#define PB00B_TC1_TIOA3 \
 	SAM_PINMUX(b, 0, b, periph)
 
-/* pb1_gpio */
-#define PB1_GPIO \
+/* pb01_gpio */
+#define PB01_GPIO \
 	SAM_PINMUX(b, 1, gpio, gpio)
 
-/* pb1b_tc1_tiob3 */
-#define PB1B_TC1_TIOB3 \
+/* pb01b_tc1_tiob3 */
+#define PB01B_TC1_TIOB3 \
 	SAM_PINMUX(b, 1, b, periph)
 
-/* pb2_gpio */
-#define PB2_GPIO \
+/* pb02_gpio */
+#define PB02_GPIO \
 	SAM_PINMUX(b, 2, gpio, gpio)
 
-/* pb2b_tc1_tioa4 */
-#define PB2B_TC1_TIOA4 \
+/* pb02b_tc1_tioa4 */
+#define PB02B_TC1_TIOA4 \
 	SAM_PINMUX(b, 2, b, periph)
 
-/* pb3_gpio */
-#define PB3_GPIO \
+/* pb03_gpio */
+#define PB03_GPIO \
 	SAM_PINMUX(b, 3, gpio, gpio)
 
-/* pb3b_tc1_tiob4 */
-#define PB3B_TC1_TIOB4 \
+/* pb03b_tc1_tiob4 */
+#define PB03B_TC1_TIOB4 \
 	SAM_PINMUX(b, 3, b, periph)
 
-/* pb4_gpio */
-#define PB4_GPIO \
+/* pb04_gpio */
+#define PB04_GPIO \
 	SAM_PINMUX(b, 4, gpio, gpio)
 
-/* pb4b_tc1_tioa5 */
-#define PB4B_TC1_TIOA5 \
+/* pb04b_tc1_tioa5 */
+#define PB04B_TC1_TIOA5 \
 	SAM_PINMUX(b, 4, b, periph)
 
-/* pb5_gpio */
-#define PB5_GPIO \
+/* pb05_gpio */
+#define PB05_GPIO \
 	SAM_PINMUX(b, 5, gpio, gpio)
 
-/* pb5b_tc1_tiob5 */
-#define PB5B_TC1_TIOB5 \
+/* pb05b_tc1_tiob5 */
+#define PB05B_TC1_TIOB5 \
 	SAM_PINMUX(b, 5, b, periph)
 
-/* pb6_gpio */
-#define PB6_GPIO \
+/* pb06_gpio */
+#define PB06_GPIO \
 	SAM_PINMUX(b, 6, gpio, gpio)
 
-/* pb6b_pwm_pwml4 */
-#define PB6B_PWM_PWML4 \
+/* pb06b_pwm_pwml4 */
+#define PB06B_PWM_PWML4 \
 	SAM_PINMUX(b, 6, b, periph)
 
-/* pb7_gpio */
-#define PB7_GPIO \
+/* pb07_gpio */
+#define PB07_GPIO \
 	SAM_PINMUX(b, 7, gpio, gpio)
 
-/* pb7b_pwm_pwml5 */
-#define PB7B_PWM_PWML5 \
+/* pb07b_pwm_pwml5 */
+#define PB07B_PWM_PWML5 \
 	SAM_PINMUX(b, 7, b, periph)
 
-/* pb8_gpio */
-#define PB8_GPIO \
+/* pb08_gpio */
+#define PB08_GPIO \
 	SAM_PINMUX(b, 8, gpio, gpio)
 
-/* pb8b_pwm_pwml6 */
-#define PB8B_PWM_PWML6 \
+/* pb08b_pwm_pwml6 */
+#define PB08B_PWM_PWML6 \
 	SAM_PINMUX(b, 8, b, periph)
 
-/* pb9_gpio */
-#define PB9_GPIO \
+/* pb09_gpio */
+#define PB09_GPIO \
 	SAM_PINMUX(b, 9, gpio, gpio)
 
-/* pb9b_pwm_pwml7 */
-#define PB9B_PWM_PWML7 \
+/* pb09b_pwm_pwml7 */
+#define PB09B_PWM_PWML7 \
 	SAM_PINMUX(b, 9, b, periph)
 
 /* pb10_gpio */
