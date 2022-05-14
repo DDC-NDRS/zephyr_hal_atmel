@@ -76,8 +76,9 @@ def get_port_pin(pin_name):
 
 
 def write_gpio_function(f, port, pin_num, fmap, function):
-    f.write(f"\n/* p{port.lower()}{pin_num}_{function.lower()} */\n")
-    define = f"#define P{port.upper()}{pin_num.upper()}_{function.upper()}"
+    tmp_pin = f"{int(pin_num):#02}"
+    f.write(f"\n/* p{port.lower()}{tmp_pin}_{function.lower()} */\n")
+    define = f"#define P{port.upper()}{tmp_pin}_{function.upper()}"
     define_val = f"{fmap}({port.lower()}, {pin_num}, {function.lower()}, " \
                  f"{function.lower()})"
     f.write(f"{define} \\\n\t{define_val}\n")
@@ -85,9 +86,10 @@ def write_gpio_function(f, port, pin_num, fmap, function):
 
 def write_periph_function(f, port, pin_num, pinmux, periph,
                           signal, fmap, function):
-    f.write(f"\n/* p{port.lower()}{pin_num}{pinmux}_{periph}_{signal} "
+    tmp_pin = f"{int(pin_num):#02}"
+    f.write(f"\n/* p{port.lower()}{tmp_pin}{pinmux}_{periph}_{signal} "
             f"*/\n")
-    define = f"#define P{port.upper()}{pin_num.upper()}" \
+    define = f"#define P{port.upper()}{tmp_pin}" \
              f"{pinmux.upper()}_{periph.upper()}_{signal.upper()}"
     define_val = f"{fmap}({port.lower()}, {pin_num}, " \
                  f"{pinmux.lower()}, {function.lower()})"
