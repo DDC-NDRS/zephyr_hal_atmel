@@ -622,9 +622,9 @@ void PTC_Handler                 ( void );
 #define PAC_INSTS         { PAC }                    /**< \brief (PAC) Instances List */
 
 #if defined(_MSC_VER) /* #CUSTOM@NDRS */
-#define PM                ((Pm       *)ut_mcu_pm_ptr)
+#define xPM               ((Pm       *)ut_mcu_pm_ptr)
 #else
-#define PM                ((Pm       *)0x40000400UL) /**< \brief (PM) APB Base Address */
+#define xPM               ((Pm       *)0x40000400UL) /**< \brief (PM) APB Base Address */
 #endif
 #define PM_INST_NUM       1                          /**< \brief (PM) Number of instances */
 #define PM_INSTS          { PM }                     /**< \brief (PM) Instances List */
