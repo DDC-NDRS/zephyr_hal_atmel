@@ -237,7 +237,11 @@ void PTC_Handler                 ( void );
 #define __MPU_PRESENT          1         /*!< MPU present or not */
 #define __NVIC_PRIO_BITS       2         /*!< Number of bits used for Priority Levels */
 #define __VTOR_PRESENT         1         /*!< VTOR present or not */
+#if (__GTEST == 1U)
+#define __Vendor_SysTickConfig 1         /*!< Set to 1 if different SysTick Config is used */
+#else
 #define __Vendor_SysTickConfig 0         /*!< Set to 1 if different SysTick Config is used */
+#endif
 
 /**
  * \brief CMSIS includes
