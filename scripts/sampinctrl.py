@@ -110,7 +110,7 @@ def generate_atmel_sam_header(outdir, family, fmap, serie,
     """
 
     ofname = outdir / get_header_fname(serie, variant["pincode"], revision)
-    with open(ofname, "w") as f:
+    with open(ofname, "w", newline='\n') as f:
         f.write(HEADER)
         f.write(f'\n{"#include <dt-bindings/pinctrl/atmel_sam_pinctrl.h>"}\n')
 

@@ -626,9 +626,9 @@
 #define PA18D_SERCOM3_PAD2 \
 	SAM_PINMUX(a, 18, d, periph)
 
-/* pa18f_tc4_wo0 */
-#define PA18F_TC4_WO0 \
-	SAM_PINMUX(a, 18, f, periph)
+/* pa18e_tc4_wo0 */
+#define PA18E_TC4_WO0 \
+	SAM_PINMUX(a, 18, e, periph)
 
 /* pa18f_tcc0_wo2 */
 #define PA18F_TCC0_WO2 \
@@ -1366,8 +1366,8 @@
 #define PB13C_SERCOM4_PAD1 \
 	SAM_PINMUX(b, 13, c, periph)
 
-/* pb13e_tc0_wo0 */
-#define PB13E_TC0_WO0 \
+/* pb13e_tc0_wo1 */
+#define PB13E_TC0_WO1 \
 	SAM_PINMUX(b, 13, e, periph)
 
 /* pb13f_tcc0_wo7 */
