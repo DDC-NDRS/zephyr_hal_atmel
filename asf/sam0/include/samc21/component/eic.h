@@ -202,7 +202,7 @@ typedef union {
 typedef union { // __I to avoid read-modify-write on write-to-clear register
   struct {
     __I uint32_t EXTINT:16;        /*!< bit:  0..15  External Interrupt Flag            */
-    __I uint32_t :16;              /*!< bit: 16..31  Reserved                           */
+    __I uint32_t _:16;             /*!< bit: 16..31  Reserved                           */
   } bit;                       /*!< Structure used for bit  access                  */
   uint32_t reg;                /*!< Type      used for register access              */
 } EIC_INTFLAG_Type;
@@ -220,8 +220,8 @@ typedef union { // __I to avoid read-modify-write on write-to-clear register
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
 typedef union {
   struct {
-    uint32_t ASYNCH:16;        /*!< bit:  0..15  EIC Asynchronous edge Detection Enable */
-    uint32_t :16;              /*!< bit: 16..31  Reserved                           */
+    uint32_t xASYNCH:16;       /*!< bit:  0..15  EIC Asynchronous edge Detection Enable */
+    uint32_t _:16;             /*!< bit: 16..31  Reserved                           */
   } bit;                       /*!< Structure used for bit  access                  */
   uint32_t reg;                /*!< Type      used for register access              */
 } EIC_ASYNCH_Type;
@@ -412,7 +412,7 @@ typedef struct {
   __IO EIC_INTENCLR_Type         INTENCLR;    /**< \brief Offset: 0x0C (R/W 32) Interrupt Enable Clear */
   __IO EIC_INTENSET_Type         INTENSET;    /**< \brief Offset: 0x10 (R/W 32) Interrupt Enable Set */
   __IO EIC_INTFLAG_Type          INTFLAG;     /**< \brief Offset: 0x14 (R/W 32) Interrupt Flag Status and Clear */
-  __IO EIC_ASYNCH_Type           ASYNCH;      /**< \brief Offset: 0x18 (R/W 32) EIC Asynchronous edge Detection Enable */
+  __IO EIC_ASYNCH_Type           xASYNCH;     /**< \brief Offset: 0x18 (R/W 32) EIC Asynchronous edge Detection Enable */
   __IO EIC_CONFIG_Type           CONFIG[2];   /**< \brief Offset: 0x1C (R/W 32) Configuration n */
 } Eic;
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
