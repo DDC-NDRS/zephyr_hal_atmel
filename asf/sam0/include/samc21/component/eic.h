@@ -202,7 +202,7 @@ typedef union {
 typedef union { // __I to avoid read-modify-write on write-to-clear register
   struct {
     __I uint32_t EXTINT:16;        /*!< bit:  0..15  External Interrupt Flag            */
-    __I uint32_t _:16;             /*!< bit: 16..31  Reserved                           */
+    __I uint32_t Reserved1:16;     /*!< bit: 16..31  Reserved                           */
   } bit;                       /*!< Structure used for bit  access                  */
   uint32_t reg;                /*!< Type      used for register access              */
 } EIC_INTFLAG_Type;
@@ -221,7 +221,7 @@ typedef union { // __I to avoid read-modify-write on write-to-clear register
 typedef union {
   struct {
     uint32_t xASYNCH:16;       /*!< bit:  0..15  EIC Asynchronous edge Detection Enable */
-    uint32_t _:16;             /*!< bit: 16..31  Reserved                           */
+    uint32_t Reserved1:16;     /*!< bit: 16..31  Reserved                           */
   } bit;                       /*!< Structure used for bit  access                  */
   uint32_t reg;                /*!< Type      used for register access              */
 } EIC_ASYNCH_Type;
