@@ -1874,8 +1874,8 @@
 #define PE04B_TC3_TIOB10 \
 	SAM_PINMUX(e, 4, b, periph)
 
-/* pe04x_afe1_ad4 */
-#define PE04X_AFE1_AD4 \
+/* pe4x_afe0_ad4 */
+#define PE4X_AFE0_AD4 \
 	SAM_PINMUX(e, 4, x, extra)
 
 /* pe05_gpio */
@@ -1890,6 +1890,6 @@
 #define PE05B_TC3_TCLK10 \
 	SAM_PINMUX(e, 5, b, periph)
 
-/* pe05x_afe1_ad3 */
-#define PE05X_AFE1_AD3 \
+/* pe5x_afe0_ad3 */
+#define PE5X_AFE0_AD3 \
 	SAM_PINMUX(e, 5, x, extra)
